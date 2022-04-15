@@ -64,13 +64,6 @@ int main(int argc, char const *argv[])
         perror("accept");
         exit(EXIT_FAILURE);
     }
-    // valread = read( new_socket , buffer, 1024);
-    // printf("%s\n",buffer );
-    // send(new_socket , hello , strlen(hello) , 0 );
-    // printf("Hello message sent\n");
-    // return 0;
-
-
 
     // Splitting reading data from client.sending sata to client and creating the socket
 
@@ -119,44 +112,6 @@ int main(int argc, char const *argv[])
 
     return 0;
 
-
-
-//     if(pid==0){
-//         printf("%s","Child Process");
-//         printf("\n");
-//         int res = setuid(65534);
-//         printf("\nThe new user id of this process is : ");
-//         printf("%d\n",getuid());
-//         printf("%d\n",res);
-        
-//        if (listen(server_fd, 3) < 0)
-//         {
-//             perror("listen");
-//             exit(EXIT_FAILURE);
-//         }
-//         if ((new_socket = accept(server_fd, (struct sockaddr *)&address,
-//                            (socklen_t*)&addrlen))<0)
-//         {
-//             perror("accept");
-//             exit(EXIT_FAILURE);
-//         }
-//         valread = read( new_socket , buffer, 1024);
-//         printf("%s\n",buffer );
-//         send(new_socket , hello , strlen(hello) , 0 );
-//         printf("Hello message sent\n");
-//         return 0;
-
-//     }
-//     else
-//     {   
-//         pid_t mpid = wait(NULL);
-//         printf("%d",mpid);
-//         printf("\n");
-//         printf("%s","Master Process");
-//         printf("\n");
-//         printf("%d\n", getuid());
-       
-//     }
  }
 
 
